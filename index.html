@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#061c2b" />
+    <title>SIGNBRIDGE | Accessible hospital communication</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <nav class="topbar" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="Signbridge home"><span class="brand-mark">S</span>SIGNBRIDGE</a>
+        <div class="nav-links"><a href="#how-it-works">How it works</a><a href="#features">Features</a><a href="#about">About</a></div>
+        <button class="language" type="button" aria-label="Change language">EN <span>⌄</span></button>
+      </nav>
+
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Accessibility, at the point of care</p>
+          <h1>Every patient deserves to be <em>understood.</em></h1>
+          <p class="lede">SIGNBRIDGE helps Deaf patients and hospital teams communicate clearly with Indian Sign Language - online or offline.</p>
+          <div class="hero-actions">
+            <button class="button primary" type="button" data-scroll="communicate">Start communicating <b>→</b></button>
+            <button class="button quiet" type="button" data-scroll="how-it-works"><span class="play">▶</span> See how it works</button>
+          </div>
+          <div class="trust-row"><span class="live-dot"></span><span>Designed for real hospital moments</span><span class="divider"></span><span>ISL-first</span><span class="divider"></span><span>Offline-ready</span></div>
+        </div>
+
+        <div class="hero-art" aria-label="Illustration of accessible communication">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="cross cross-one">+</div><div class="cross cross-two">+</div>
+          <div class="art-card clinician-card"><div class="avatar clinician"><span>Dr.</span></div><div><small>HOSPITAL TEAM</small><strong>We're here to help.</strong></div><span class="signal">◔</span></div>
+          <div class="bridge-screen"><div class="screen-top"><span class="mini-brand">S</span><span>LIVE ISL SESSION</span><i></i></div><div class="hands"><span class="hand hand-left">✋</span><span class="hand hand-right">🤟</span><div class="connection"><b></b><b></b><b></b></div></div><div class="translation">I need help finding <strong>Radiology</strong></div></div>
+          <div class="art-card patient-card"><div class="avatar patient"><span>AK</span></div><div><small>PATIENT</small><strong>Ananya Kumar</strong></div><span class="check">✓</span></div>
+          <div class="caption-chip"><span class="sound">⌁</span> ISL interpreted in real time</div>
+        </div>
+      </section>
+
+      <section class="communicate" id="communicate">
+        <div class="section-heading"><p class="eyebrow"><span></span> Start a conversation</p><h2>What do you need help with?</h2><p>Select an option to show it clearly to your care team.</p></div>
+        <div class="choice-grid">
+          <button class="choice active" type="button" data-message="I have an appointment"><span class="choice-icon">▣</span><strong>Appointment</strong><small>Check in or find your clinic</small><i>→</i></button>
+          <button class="choice" type="button" data-message="I need help finding a location"><span class="choice-icon">⌖</span><strong>Find a location</strong><small>Get directions inside the hospital</small><i>→</i></button>
+          <button class="choice" type="button" data-message="I need urgent help"><span class="choice-icon">✚</span><strong>I need help</strong><small>Ask a member of staff</small><i>→</i></button>
+          <button class="choice" type="button" data-message="I need to talk to a doctor"><span class="choice-icon">◌</span><strong>Talk to my care team</strong><small>Start a supported conversation</small><i>→</i></button>
+        </div>
+        <div class="message-bar" aria-live="polite"><span class="message-label">YOUR MESSAGE</span><strong id="message-text">I have an appointment</strong><button type="button" class="button primary small" id="send-message">Show to staff <b>→</b></button></div>
+      </section>
+
+      <section class="how" id="how-it-works">
+        <div><p class="eyebrow"><span></span> A calmer care experience</p><h2>Communication that meets you where you are.</h2></div>
+        <div class="steps"><article><span>01</span><h3>Express yourself in ISL</h3><p>Use camera recognition or simple visual choices to share what you need.</p></article><article><span>02</span><h3>Get a clear response</h3><p>Staff receive your message in text and voice, with helpful context.</p></article><article><span>03</span><h3>Stay in control</h3><p>Receive validated ISL responses, directions, and support at every step.</p></article></div>
+      </section>
+    </main>
+    <footer id="about"><a class="brand" href="#home"><span class="brand-mark">S</span>SIGNBRIDGE</a><p>Bridging the communication gap with Indian Sign Language.</p><span>Built for accessible public services</span></footer>
+    <div class="toast" id="toast" role="status">Your message is ready to show to a staff member. <button type="button" aria-label="Close message">×</button></div>
+    <script src="script.js"></script>
+  </body>
+</html>
